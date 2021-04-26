@@ -50,6 +50,12 @@ That may have been true for most farmers, for a great deal of time.
 
 > Assuming that a generic sample of sunlight is optmium for growth of all categories of vegetation, is akin to believing something as baseless as "Vegetarian diet is the most suited diet for the entire Human Population."
 
+## The project
+
+---
+
+[<img src="https://img.youtube.com/vi/lyaPOUGyACY/maxresdefault.jpg" width="100%">](https://youtu.be/lyaPOUGyACY)
+
 ## How to run the project
 
 ---
@@ -80,12 +86,14 @@ The project consists of two parts, the server (created using NodeJS) and the mob
     # Running the application (Android)
     npx react-native run-android
 
-    # Running the application (iOS)
-    (Note: you require macOS with XCode installed before running the application)
-    npx react-native run-ios
 
     # Install the podfile dependencies
     cd ios && pod install && ..
+
+    # Running the application (iOS)
+    npx react-native run-ios
+
+    (Note: you require macOS with XCode installed before running iOS application)
 
 ## App Screenshots
 
