@@ -92,9 +92,10 @@ The project consists of two parts, the server (created using NodeJS) and the mob
 |            Preview 1            |            Preview 2            |
 | :-----------------------------: | :-----------------------------: |
 | ![](./assets/screenshots/1.png) | ![](./assets/screenshots/2.png) |
-|   :-------------------------:   |   :-------------------------:   |
-|            Preview 3            |            Dashboard            |
-|   :-------------------------:   |   :-------------------------:   |
+
+|  
+| Preview 3 | Dashboard |
+|  
 | ![](./assets/screenshots/3.png) | ![](./assets/screenshots/4.png) |
 
 ---
