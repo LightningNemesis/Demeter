@@ -1,0 +1,42 @@
+{
+  "humidity": [
+    {
+      "id": 1,
+      "name": "Humid_sen_1",
+      "value": 30
+    },
+    {
+      "id": 2,
+      "name": "Humid_sen_2",
+      "value": 30
+    }
+  ],
+  "temperature": [
+    {
+      "id": 1,
+      "name": "temp_sen_1",
+      "value": 60
+    },
+    {
+      "id": 2,
+      "name": "temp_sen_2",
+      "value": 40
+    }
+  ],
+  "led_rgba": {
+    "id": 1,
+    "name": "led_rgba_sen",
+    "value_r": 100,
+    "value_g": 131,
+    "value_b": 244,
+    "value_a": 0.9
+  },
+  "water_lvl": {
+    "id": 1,
+    "name": "water_lvl_sen",
+    "value": 60
+  },
+  "percent_complete": {
+    "value": 80
+  }
+}
