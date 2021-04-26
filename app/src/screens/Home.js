@@ -15,25 +15,12 @@ import {AnimatedCircularProgress} from 'react-native-circular-progress';
 
 const {width, height} = Dimensions.get('window');
 
-const percentage = 66;
-
-// const getData = () => {
-//   fetch(`http://192.168.0.108:4000/home`, {
-//     method: 'GET',
-//   })
-//     .then((res) => res.json())
-//     .then((response) => {
-//       console.log(response);
-//       return response;
-//     });
-// };
-
 const Home = () => {
   const [isLoading, setLoading] = React.useState(true);
   const [dataGot, setGotData] = React.useState({});
 
-  React.useEffect(() => {
-    fetch(`http://192.168.0.108:4000/home`, {
+  const getData = () => {
+    fetch(`http://127.0.0.1:4000/home`, {
       method: 'GET',
     })
       .then((res) => res.json())
@@ -43,6 +30,11 @@ const Home = () => {
       })
       .catch((error) => console.error(error))
       .finally(() => setLoading(false));
+  };
+
+  React.useEffect(() => {
+    console.log(isLoading);
+    getData();
   }, []);
 
   return (
@@ -53,7 +45,7 @@ const Home = () => {
         <View
           style={{
             width: width,
-            height: height*1.5,
+            height: height * 1.5,
             justifyContent: 'center',
             alignItems: 'center',
             backgroundColor: `rgba(${dataGot.led_rgba.value_r}, ${dataGot.led_rgba.value_g}, ${dataGot.led_rgba.value_b}, ${dataGot.led_rgba.value_a})`,
@@ -62,7 +54,6 @@ const Home = () => {
             size={250}
             width={25}
             fill={dataGot.percent_complete.value}
-            // fill={10}
             tintColor="#3BFCF9"
             onAnimationComplete={() => console.log('onAnimationComplete')}
             backgroundColor="#08094C"
